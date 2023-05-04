@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("fonts/GothamMedium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("fonts/GothamLight.ttf") format("truetype");
+    font-weight: lighter;
+}
+
+$background-color-black: #282f38;
+$background-color-white: white;
+$darkred-color: #8C2656;
+$lightred-color: #F20544;
+$Head-and-footer-color: #011420;
+$Normal-font: "Gotham", Arial, Helvetica, sans-serif;
+
+@mixin fontlighter() {
+    font-family: "Gotham", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.App {
+    background-color: $background-color-black;
+    height: 100vh;
+
+    .Header-Of-Site {
+        background-color: $Head-and-footer-color;
+        height: 40px;
+        color: white;
+
+        .Button-Menu-Container {
+            position: relative;
+            height: 100%;
+            width: 40px;
+
+            .Button-Menu {
+                color: white;
+                background-color: transparent;
+                border: 0px;
+                margin-top: 5px;
+
+                .material-symbols-outlined {
+                    font-size: 30px;
+                }
+
+            }
+        }
+
+        h1 {
+            font-size: 30px;
+            @include fontlighter;
+        }
+
+        .Dark-Or-Light-Button-Container {
+            .Dark-Or-Light-Button {
+                position: relative;
+                background-color: transparent;
+                width: 35px;
+                height: 20px;
+                margin: 10px 15px 0px auto;
+                border: 1px solid $darkred-color;
+                border-radius: 10px;
+
+                .Boll-Dark-Light {
+                    position: absolute;
+                    background: black url(imagens/dia-e-noite.png) no-repeat;
+                    background-size: cover;
+                    background-size: 100% 100%;
+                    width: 15px;
+                    height: 15px;
+                    margin: 0px;
+                    top: 9%;
+                    left: 0%;
+                    border-radius: 100%;
+                }
+                .Boll-Light {
+                    position: absolute;
+                    background: black url(imagens/dia-e-noite.png) no-repeat;
+                    background-size: cover;
+                    background-size: 100% 100%;
+                    width: 15px;
+                    height: 15px;
+                    margin: 0px;
+                    top: 9%;
+                    left: 50%;
+                    border-radius: 100%;
+                }
+
+                .themechange-enter {
+                    left: 0%;
+                }
+
+                .themechange-enter-active {
+                    left: 50%;
+                    transition: left 500ms;
+                }
+
+                .themechange-exit {
+                    left: 50%;
+                }
+
+                .themechange-exit-active {
+                    left: 0%;
+                    transition: left 500ms ease-in;
+                }
+
+            }
+        }
+    }
+
+
+}
