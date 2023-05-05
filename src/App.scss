@@ -11,7 +11,7 @@
 }
 
 $background-color-black: #282f38;
-$background-color-white: white;
+$background-color-white: #dadada;
 $darkred-color: #8C2656;
 $lightred-color: #F20544;
 $Head-and-footer-color: #011420;
@@ -26,16 +26,31 @@ $Normal-font: "Gotham", Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
-html{
+
+html {
     height: 100vh;
 }
-body{
+
+body {
     height: 100%;
-    background-color: $background-color-black;
 }
 
 .App {
-    
+
+    .Light-Theme {
+        position: absolute;
+        background-color: $background-color-white;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Dark-Theme {
+        position: absolute;
+        background-color: $background-color-black;
+        height: 100%;
+        width: 100%;
+
+    }
 
     .Website-Header {
         position: absolute;
@@ -43,8 +58,8 @@ body{
         height: 40px;
         color: white;
         box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.348);
-        
-       z-index: 2;
+
+        z-index: 2;
 
         h1 {
             font-size: 27px;
@@ -72,7 +87,7 @@ body{
                     height: 20px;
                     margin: 0px;
                     top: -2%;
-                    
+
                     border-radius: 100%;
                 }
 
@@ -99,32 +114,32 @@ body{
 
         }
     }
-    
-    .Body-All{
+
+    .Body-All {
 
         height: 100vh;
 
-        .Menu-Opcoes{
+        .Menu-Opcoes {
             position: absolute;
             background-color: rgba(0, 0, 0, 0.558);
             height: 100%;
             width: 120px;
-            
-            .Menu-Buttons-Ul{
+
+            .Menu-Buttons-Ul {
                 list-style: none;
                 width: 100%;
                 margin: 40px 0px 0px 0px;
                 padding: 0;
                 text-align: center;
-                
-                
-                li{
+
+
+                li {
                     width: 100%;
                     height: 35px;
-                    
-                    
-                    
-                    button{
+
+
+
+                    button {
                         background: transparent;
                         width: 100%;
                         height: 100%;
@@ -132,16 +147,17 @@ body{
                         border: 0px;
                         font-family: $Normal-font;
                     }
-                    button:hover{
+
+                    button:hover {
                         background-color: #000000;
                     }
                 }
 
             }
-            
+
         }
 
-        .About-me-Container{
+        @mixin Home-Photo() {
             width: 80%;
             height: 400px;
             margin: auto;
@@ -149,19 +165,30 @@ body{
             border-left: 2px solid $darkred-color;
             border-right: 2px solid $lightred-color;
             border-radius: 0px 0px 25px 25px;
-            background-image: url(imagens/jt-6a-1JcjtVbc-unsplash.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             box-shadow: inset 1px 1px 10px 3px rgba(0, 0, 0, 0.227);
+        }
 
-            .Container-My-Img{
-                width: 100%;
-                height: 100%;
+        .Home-start-DarkTheme {
 
-                
+            background-image: url(imagens/jt-6a-1JcjtVbc-unsplash.jpg);
+            @include Home-Photo;}
 
-                    .My-Img{
+            .Home-start-LightTheme {
+
+            background-image: url(imagens/clement-m-igX2deuD9lc-unsplash.jpg);
+            @include Home-Photo;}
+            
+
+                .Container-My-Img {
+                    width: 100%;
+                    height: 100%;
+
+
+
+                    .My-Img {
                         background: black url("imagens/Myphotoedit.png") no-repeat;
                         background-size: cover;
                         width: 90px;
@@ -171,11 +198,13 @@ body{
                         opacity: 80%;
                         margin: auto;
                     }
-                    
-              
-            }
+
+
+
+                }
+            
+
         
-        }
     }
 
 

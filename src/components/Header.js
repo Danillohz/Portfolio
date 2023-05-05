@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Transition } from 'react-transition-group'
 
+import BodyAll from './BodyAll';
+
 import imgMoon from '../imagens/Moon.png'
 import imgSun from '../imagens/Sun.png'
 
@@ -25,11 +27,18 @@ const transitionStyles = {
 
 const Header = () => {
 
-    const [isTheme, setIsTheme] = useState(false);
+    const [changeTheme, setChangeTheme] = useState(false);
+    const [theme, setTheme] = useState('Dark-Theme')
     const nodeRef = React.useRef(null)
 
     const clickChangeTheme = () => {
-        setIsTheme(!isTheme)
+        setChangeTheme(!changeTheme)
+
+        if(changeTheme === false){
+            setTheme("Light-Theme")
+        }else{
+            setTheme("Dark-Theme")
+        }
     }
 
 
@@ -41,7 +50,7 @@ const Header = () => {
                 <div className="position-absolute top-0 end-0 Dark-Or-Light-Button-Container">
                     <button className="Dark-Or-Light-Button" onClick={clickChangeTheme}>
 
-                        <Transition in={isTheme} timeout={0} nodeRef={nodeRef}>
+                        <Transition in={changeTheme} timeout={0} nodeRef={nodeRef}>
                             {(state) => (
                                 <div ref={nodeRef}
                                     style={{ ...defaulStyle, ...transitionStyles[state] }}
@@ -52,6 +61,9 @@ const Header = () => {
 
                     </button>
                 </div>
+            </div>
+            <div className={theme}>
+            <BodyAll changeTheme={changeTheme}></BodyAll>
             </div>
 
 
