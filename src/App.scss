@@ -26,36 +26,28 @@ $Normal-font: "Gotham", Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
+html{
+    height: 100vh;
+}
+body{
+    height: 100%;
+    background-color: $background-color-black;
+}
 
 .App {
-    background-color: $background-color-black;
-    height: 100vh;
+    
 
-    .Header-Of-Site {
+    .Website-Header {
+        position: absolute;
         background-color: $Head-and-footer-color;
         height: 40px;
         color: white;
-
-        .Button-Menu-Container {
-            position: relative;
-            height: 100%;
-            width: 40px;
-
-            .Button-Menu {
-                color: white;
-                background-color: transparent;
-                border: 0px;
-                margin-top: 5px;
-
-                .material-symbols-outlined {
-                    font-size: 30px;
-                }
-
-            }
-        }
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.348);
+        
+       z-index: 2;
 
         h1 {
-            font-size: 30px;
+            font-size: 27px;
             @include fontlighter;
         }
 
@@ -71,48 +63,118 @@ $Normal-font: "Gotham", Arial, Helvetica, sans-serif;
 
                 .Boll-Dark-Light {
                     position: absolute;
-                    background: black url(imagens/dia-e-noite.png) no-repeat;
+                    background-image: url("imagens/Moon.png");
+                    background-repeat: no-repeat;
+                    background-color: transparent;
                     background-size: cover;
                     background-size: 100% 100%;
-                    width: 15px;
-                    height: 15px;
+                    width: 20px;
+                    height: 20px;
                     margin: 0px;
-                    top: 9%;
-                    left: 0%;
-                    border-radius: 100%;
-                }
-                .Boll-Light {
-                    position: absolute;
-                    background: black url(imagens/dia-e-noite.png) no-repeat;
-                    background-size: cover;
-                    background-size: 100% 100%;
-                    width: 15px;
-                    height: 15px;
-                    margin: 0px;
-                    top: 9%;
-                    left: 50%;
+                    top: -2%;
+                    
                     border-radius: 100%;
                 }
 
-                .themechange-enter {
-                    left: 0%;
-                }
 
-                .themechange-enter-active {
-                    left: 50%;
-                    transition: left 500ms;
-                }
+            }
+        }
+    }
 
-                .themechange-exit {
-                    left: 50%;
-                }
+    .Menu-Button-Container {
+        position: absolute;
+        height: 100%;
+        width: 40px;
+        z-index: 2;
 
-                .themechange-exit-active {
-                    left: 0%;
-                    transition: left 500ms ease-in;
+        .Menu-Button {
+            color: white;
+            background-color: transparent;
+            border: 0px;
+            margin: 5px 0px 0px 4px;
+
+            .material-symbols-outlined {
+                font-size: 28px;
+            }
+
+        }
+    }
+    
+    .Body-All{
+
+        height: 100vh;
+
+        .Menu-Opcoes{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.558);
+            height: 100%;
+            width: 120px;
+            
+            .Menu-Buttons-Ul{
+                list-style: none;
+                width: 100%;
+                margin: 40px 0px 0px 0px;
+                padding: 0;
+                text-align: center;
+                
+                
+                li{
+                    width: 100%;
+                    height: 35px;
+                    
+                    
+                    
+                    button{
+                        background: transparent;
+                        width: 100%;
+                        height: 100%;
+                        color: white;
+                        border: 0px;
+                        font-family: $Normal-font;
+                    }
+                    button:hover{
+                        background-color: #000000;
+                    }
                 }
 
             }
+            
+        }
+
+        .About-me-Container{
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            padding-top: 40px;
+            border-left: 2px solid $darkred-color;
+            border-right: 2px solid $lightred-color;
+            border-radius: 0px 0px 25px 25px;
+            background-image: url(imagens/jt-6a-1JcjtVbc-unsplash.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: inset 1px 1px 10px 3px rgba(0, 0, 0, 0.227);
+
+            .Container-My-Img{
+                width: 100%;
+                height: 100%;
+
+                
+
+                    .My-Img{
+                        background: black url("imagens/Myphotoedit.png") no-repeat;
+                        background-size: cover;
+                        width: 90px;
+                        height: 140px;
+                        border-radius: 30%;
+                        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.423);
+                        opacity: 80%;
+                        margin: auto;
+                    }
+                    
+              
+            }
+        
         }
     }
 
