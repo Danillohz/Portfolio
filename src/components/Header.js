@@ -7,7 +7,7 @@ import imgMoon from '../imagens/Moon.png'
 import imgSun from '../imagens/Sun.png'
 
 
-
+//executa a animação do menu
 const duration = 500;
 const defaulStyle = {
     transition: `left ${duration}ms, transform ${duration - 100}ms, background-Image ${duration - 300}ms  ease-in-out`,
@@ -28,16 +28,17 @@ const transitionStyles = {
 const Header = () => {
 
     const [changeTheme, setChangeTheme] = useState(false);
-    const [theme, setTheme] = useState('Dark-Theme')
+
     const nodeRef = React.useRef(null)
 
+    //Muda o tema Dark/Light
     const clickChangeTheme = () => {
         setChangeTheme(!changeTheme)
 
         if(changeTheme === false){
-            setTheme("Light-Theme")
+            document.body.style.backgroundColor = '#dadada';
         }else{
-            setTheme("Dark-Theme")
+            document.body.style.backgroundColor = '#282f38';
         }
     }
 
@@ -62,9 +63,10 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <div className={theme}>
+
+            
             <BodyAll changeTheme={changeTheme}></BodyAll>
-            </div>
+           
 
 
 

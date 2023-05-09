@@ -27,185 +27,210 @@ $Normal-font: "Gotham", Arial, Helvetica, sans-serif;
     padding: 0px;
 }
 
-html {
-    height: 100vh;
-}
 
 body {
-    height: 100%;
-}
 
-.App {
+    background-color: $background-color-black;
 
-    .Light-Theme {
-        position: absolute;
-        background-color: $background-color-white;
+    .App {
+
         height: 100%;
-        width: 100%;
-    }
 
-    .Dark-Theme {
-        position: absolute;
-        background-color: $background-color-black;
-        height: 100%;
-        width: 100%;
-
-    }
-
-    .Website-Header {
-        position: absolute;
-        background-color: $Head-and-footer-color;
-        height: 40px;
-        color: white;
-        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.348);
-
-        z-index: 2;
-
-        h1 {
-            font-size: 27px;
-            @include fontlighter;
-        }
-
-        .Dark-Or-Light-Button-Container {
-            .Dark-Or-Light-Button {
-                position: relative;
-                background-color: transparent;
-                width: 35px;
-                height: 20px;
-                margin: 10px 15px 0px auto;
-                border: 1px solid $darkred-color;
-                border-radius: 10px;
-
-                .Boll-Dark-Light {
-                    position: absolute;
-                    background-image: url("imagens/Moon.png");
-                    background-repeat: no-repeat;
-                    background-color: transparent;
-                    background-size: cover;
-                    background-size: 100% 100%;
-                    width: 20px;
-                    height: 20px;
-                    margin: 0px;
-                    top: -2%;
-
-                    border-radius: 100%;
-                }
-
-
-            }
-        }
-    }
-
-    .Menu-Button-Container {
-        position: absolute;
-        height: 100%;
-        width: 40px;
-        z-index: 2;
-
-        .Menu-Button {
-            color: white;
-            background-color: transparent;
-            border: 0px;
-            margin: 5px 0px 0px 4px;
-
-            .material-symbols-outlined {
-                font-size: 28px;
-            }
-
-        }
-    }
-
-    .Body-All {
-
-        height: 100vh;
-
-        .Menu-Opcoes {
+        .Website-Header {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.558);
+            background-color: $Head-and-footer-color;
+            height: 40px;
+            color: white;
+            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.348);
+
+            z-index: 2;
+
+            h1 {
+                font-size: 27px;
+                @include fontlighter;
+            }
+
+            .Dark-Or-Light-Button-Container {
+                .Dark-Or-Light-Button {
+                    position: relative;
+                    background-color: transparent;
+                    width: 35px;
+                    height: 20px;
+                    margin: 10px 15px 0px auto;
+                    border: 1px solid $darkred-color;
+                    border-radius: 10px;
+
+                    .Boll-Dark-Light {
+                        position: absolute;
+                        background-image: url("imagens/Moon.png");
+                        background-repeat: no-repeat;
+                        background-color: transparent;
+                        background-size: cover;
+                        background-size: 100% 100%;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0px;
+                        top: -2%;
+
+                        border-radius: 100%;
+                    }
+
+
+                }
+            }
+        }
+
+        .Menu-Button-Container {
+            position: absolute;
             height: 100%;
-            width: 120px;
+            width: 40px;
+            z-index: 2;
 
-            .Menu-Buttons-Ul {
-                list-style: none;
-                width: 100%;
-                margin: 40px 0px 0px 0px;
-                padding: 0;
-                text-align: center;
+            .Menu-Button {
+                color: white;
+                background-color: transparent;
+                border: 0px;
+                margin: 5px 0px 0px 4px;
+
+                .material-symbols-outlined {
+                    font-size: 28px;
+                }
+
+            }
+        }
+
+        .Body-All {
+
+            height: 100%;
 
 
-                li {
+
+            .Menu-Opcoes {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.558);
+                height: 100%;
+                width: 120px;
+
+                .Menu-Buttons-Ul {
+                    list-style: none;
                     width: 100%;
-                    height: 35px;
+                    margin: 40px 0px 0px 0px;
+                    padding: 0;
+                    text-align: center;
 
 
-
-                    button {
-                        background: transparent;
+                    li {
                         width: 100%;
-                        height: 100%;
-                        color: white;
-                        border: 0px;
-                        font-family: $Normal-font;
+                        height: 35px;
+
+
+
+                        button {
+                            background: transparent;
+                            width: 100%;
+                            height: 100%;
+                            color: white;
+                            border: 0px;
+                            font-family: $Normal-font;
+                        }
+
+                        button:hover {
+                            background-color: #191919;
+                        }
                     }
 
-                    button:hover {
-                        background-color: #000000;
-                    }
                 }
 
             }
 
-        }
+            @mixin Home-Photo() {
+                width: 80%;
+                height: 400px;
+                margin: auto;
+                padding-top: 40px;
+                border-left: 2px solid $darkred-color;
+                border-right: 2px solid $lightred-color;
+                border-radius: 0px 0px 25px 25px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: inset 1px 1px 10px 3px rgba(0, 0, 0, 0.227);
+            }
 
-        @mixin Home-Photo() {
-            width: 80%;
-            height: 400px;
-            margin: auto;
-            padding-top: 40px;
-            border-left: 2px solid $darkred-color;
-            border-right: 2px solid $lightred-color;
-            border-radius: 0px 0px 25px 25px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            box-shadow: inset 1px 1px 10px 3px rgba(0, 0, 0, 0.227);
-        }
+            .Home-start-DarkTheme {
 
-        .Home-start-DarkTheme {
-
-            background-image: url(imagens/jt-6a-1JcjtVbc-unsplash.jpg);
-            @include Home-Photo;}
+                background-image: url(imagens/jt-6a-1JcjtVbc-unsplash.jpg);
+                @include Home-Photo;
+            }
 
             .Home-start-LightTheme {
 
-            background-image: url(imagens/clement-m-igX2deuD9lc-unsplash.jpg);
-            @include Home-Photo;}
-            
+                background-image: url(imagens/clement-m-igX2deuD9lc-unsplash.jpg);
+                @include Home-Photo;
+            }
 
-                .Container-My-Img {
+            .Container-My-Img {
+                width: 100%;
+                height: 100%;
+
+
+
+                .My-Img {
+                    background: black url("imagens/Phototer.jpg") no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    width: 90px;
+                    max-width: 28%;
+                    height: 17vh;
+
+                    border-radius: 20%;
+                    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.423);
+                    opacity: 94%;
+                    margin: auto;
+                }
+
+
+
+
+            }
+
+            .SkillsAndContact-Container {
+
+                width: 80%;
+                margin: auto;
+                
+                h1{
+                    color: #191e24;
+                    font-size: 24px;
+                }
+                h2{
+                    color: #191e24;
+                    font-size: 22px;
+                }
+
+                @mixin skillAndContainer {
+                   
+                    text-align: center;
                     width: 100%;
                     height: 100%;
-
-
-
-                    .My-Img {
-                        background: black url("imagens/Myphotoedit.png") no-repeat;
-                        background-size: cover;
-                        width: 90px;
-                        height: 140px;
-                        border-radius: 30%;
-                        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.423);
-                        opacity: 80%;
-                        margin: auto;
-                    }
-
-
-
+                    border-left: 2px solid #191e24;
+                    border-right: 2px solid #191e24;
+                    border-radius: 20px 20px;
                 }
-            
 
-        
+                .Skills-Container {
+                    @include skillAndContainer()
+                }
+
+                .Contact-Container {
+                    @include skillAndContainer()
+                }
+            }
+
+
+
+        }
+
+
     }
-
-
 }
