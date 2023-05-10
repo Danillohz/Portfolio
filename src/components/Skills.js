@@ -1,3 +1,7 @@
+import React, { Component } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import htmlImg from "../imagens/icons/skillsimg/icons8-html-50.png"
 import BootsImg from "../imagens/icons/skillsimg/icons8-bootstrap-50.png"
 import CssImg from "../imagens/icons/skillsimg/icons8-css-50.png"
@@ -10,32 +14,115 @@ import SassImg from "../imagens/icons/skillsimg/icons8-sass-50.png"
 
 
 
-const Skills = () => {
+class Skills extends Component {
+
+  componentDidMount() {
+    AOS.init();
+  }
 
 
 
+  render() {
     return (
-        <>
+      <>
         
-            <div className="Skills-Container">
-                <h1>Skills</h1>
-                <div className="Skills-Imagens">
-                    <div className="row">
-                        <div className="mb-1 col"> <img src={htmlImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={CssImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={JsImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={ReactImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={GitImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={GitHImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={MysqlImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={BootsImg} alt=""></img> </div>
-                        <div className="mb-1 col"> <img src={SassImg} alt=""></img> </div>
-                        
-                    </div>
-                </div>
-            </div>
+        <div className="Skills-Container">
+          <h1>Skills</h1>
+          <div className="Skills-Imagens">
+            <div className="row">
 
-        </>
+
+              <div  
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+
+                <div> <img src={htmlImg} alt=""></img> </div>
+              </div>
+
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={CssImg} alt=""></img> </div>
+              </div>
+
+              <div
+              className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={JsImg} alt=""></img> </div>
+              </div>
+
+              <div
+              className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={ReactImg} alt=""></img> </div>
+              </div>
+
+              <div
+              className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={GitImg} alt=""></img> </div>
+              </div>
+
+              <div
+              className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={GitHImg} alt=""></img> </div>
+              </div>
+
+              <div
+              className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={MysqlImg} alt=""></img> </div>
+              </div>
+
+              <div
+              className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={BootsImg} alt=""></img> </div>
+              </div>
+
+              <div
+              className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="60"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div> <img src={SassImg} alt=""></img> </div>
+              </div>
+
+
+
+
+            </div>
+          </div >
+        </div >
+
+      </>
     )
+  }
 }
 export default Skills

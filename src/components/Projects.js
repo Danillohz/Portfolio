@@ -7,7 +7,7 @@ const Projects = () => {
 
             <div className="All-Projects">
                 <h1>Projects</h1>
-                <a className="Project1" href="https://danillohz.github.io/react-climate/"></a>
+                <a className="Project1" href="https://danillohz.github.io/react-climate/">climate</a>
 
 
 
