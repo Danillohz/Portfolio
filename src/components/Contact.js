@@ -13,11 +13,11 @@ const Contact = () =>{
                 <h2>Contact</h2>
                 <div className="Contacts-Links">
                     <div className="row">
-                        <div className="mb-1 col"><a href="https://github.com/Danillohz"><img src={GitHIcon} alt=""></img></a></div>
-                        <div className="mb-1 col"><a href=""><img src={LinkeIcon} alt=""></img></a></div>
-                        <div className="mb-1 col"><a href=""><img src={InstaIcon} alt=""></img></a></div>
-                        <div className="mb-1 col"><a href=""><img src={FaceIcon} alt=""></img></a></div>
-                        <div className="mb-2 col"><a href=""><img src={EmaiIcon} alt=""></img></a></div>
+                        <div className="mb-1 col"><a href="https://github.com/Danillohz" target="_blank" rel="noreferrer"><img src={GitHIcon} alt=""></img></a></div>
+                        <div className="mb-1 col"><a href="https://www.linkedin.com/in/danillo-henrique-zezepanski-056056239/" target="_blank" rel="noreferrer"><img src={LinkeIcon} alt=""></img></a></div>
+                        <div className="mb-1 col"><a href="https://www.instagram.com/danillo_hz/" target="_blank" rel="noreferrer"><img src={InstaIcon} alt=""></img></a></div>
+                        <div className="mb-1 col"><a href="https://www.facebook.com/danny.jjunior.5" target="_blank" rel="noreferrer"><img src={FaceIcon} alt=""></img></a></div>
+                        <div className="mb-2 col"><a href="mailto:danillohzd.real@gmail.com" rel="noreferrer" ><img src={EmaiIcon} alt=""></img></a></div>
                     </div>
                 </div>
             </div>

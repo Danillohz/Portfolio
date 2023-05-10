@@ -30,7 +30,7 @@ const Menu = () => {
 
     return (
         <>
-            <div className="position-absolute Menu-Button-Container">
+            <div className="Menu-Button-Container">
                 <button className="Menu-Button" onClick={clickShowMenu} ><span className="material-symbols-outlined">
                     {!showMenu ? "Menu" : "chevron_left"}
                 </span></button>

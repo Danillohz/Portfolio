@@ -1,6 +1,7 @@
 import Menu from "./Menu";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import Projects from "./Projects";
 
 
 const BodyAll = (props) => {
@@ -21,6 +22,11 @@ const BodyAll = (props) => {
                         <div className="mt-3 My-Img"></div>
                     </div>
                     <div className="textEu"></div>
+
+                </div>
+                <div className="mt-5 Container-Projects">
+                    
+                        <Projects></Projects>
 
                 </div>
                 <div className="SkillsAndContact-Container row mt-3">
