@@ -45,8 +45,8 @@ const Menu = () => {
                         
                             <ul className=" Menu-Buttons-Ul">
                                 <li><button>About me</button></li>
-                                <li><button>Contact</button></li>
                                 <li><button>Projects</button></li>
+                                <li><button>Contact</button></li>
                             </ul>
                         
                     </div>

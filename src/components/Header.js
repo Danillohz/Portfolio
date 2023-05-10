@@ -35,9 +35,9 @@ const Header = () => {
     const clickChangeTheme = () => {
         setChangeTheme(!changeTheme)
 
-        if(changeTheme === false){
+        if (changeTheme === false) {
             document.body.style.backgroundColor = '#dadada';
-        }else{
+        } else {
             document.body.style.backgroundColor = '#282f38';
         }
     }
@@ -46,11 +46,12 @@ const Header = () => {
     return (
         <>
             <div className="container-fluid Website-Header">
-                
+
                 <h1 className="mt-1  position-absolute top-0 start-50 translate-middle-x">Portifolio</h1>
                 <div className="position-absolute top-0 end-0 Dark-Or-Light-Button-Container">
                     <button className="Dark-Or-Light-Button" onClick={clickChangeTheme}>
 
+                        {/*Animação do interruptor do tema*/}
                         <Transition in={changeTheme} timeout={0} nodeRef={nodeRef}>
                             {(state) => (
                                 <div ref={nodeRef}
@@ -64,9 +65,9 @@ const Header = () => {
                 </div>
             </div>
 
-            
+
             <BodyAll changeTheme={changeTheme}></BodyAll>
-           
+
 
 
 

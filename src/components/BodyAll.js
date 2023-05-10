@@ -3,7 +3,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Projects from "./Projects";
 
-
+//chama todas classes em um único corpo
 const BodyAll = (props) => {
 
     //Recebe o param do Header(true or false)
@@ -24,7 +24,7 @@ const BodyAll = (props) => {
                     <div className="textEu"></div>
 
                 </div>
-                <div className="mt-5 Container-Projects">
+                <div className="Container-Projects">
                     
                         <Projects></Projects>
 

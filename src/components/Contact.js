@@ -10,6 +10,7 @@ import FaceIcon from "../imagens/icons/icons8-facebook-50.png"
 
 class Contact extends Component {
 
+    //componente que faz as animações funcionarem
     componentDidMount() {
         AOS.init();
     }
@@ -19,6 +20,7 @@ class Contact extends Component {
     render() {
         return (
             <>
+                {/*Animações dos icones de contato*/}
                 <div className="Contact-Container">
                     <h2>Contact</h2>
                     <div className="Contacts-Links">

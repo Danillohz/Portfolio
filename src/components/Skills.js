@@ -31,7 +31,7 @@ class Skills extends Component {
           <div className="Skills-Imagens">
             <div className="row">
 
-
+              {/*Animações de scroll dos icons */}
               <div  
                 className="mb-1 col"
                 data-aos="fade-left"

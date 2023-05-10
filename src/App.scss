@@ -198,11 +198,13 @@ body {
             .Container-Projects {
                 width: 70%;
                 height: 40vh;
-                margin: auto;
+                margin: 50px auto 50px auto ;
                 border: 2px solid #191e24;
+                box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.282);
                 color: #12161a;
                 font-family: $Normal-font;
                 text-indent: 10px;
+                border-radius: 10px;
 
 
                 .All-Projects {
@@ -215,8 +217,10 @@ body {
                         background-position: center top;
                         background-size: cover;
                         background-repeat: no-repeat;
-                        width: 90%;
+                        width: 80%;
                         height: 70%;
+                        border-radius: 10px;
+                        text-decoration: none
 
                     }
 
@@ -224,6 +228,7 @@ body {
                     .Project1 {
                         @include ProjectsImg();
                         background-image: url("imagens/projeto1.png");
+                        color: white;
                     }
                 }
             }
@@ -231,7 +236,7 @@ body {
             .SkillsAndContact-Container {
 
                 width: 80%;
-                margin: auto;
+                margin: 0px auto 50px auto;
 
                 h1 {
                     color: #12161a;
@@ -251,6 +256,7 @@ body {
                     width: 100%;
                     height: 100%;
                     border-radius: 10px 10px;
+                    
                 }
 
                 .Skills-Container {
