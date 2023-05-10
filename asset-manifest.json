@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.d9333acf.css",
-    "main.js": "/portifolio/static/js/main.e7bb20aa.js",
+    "main.css": "/portifolio/static/css/main.43b1647b.css",
+    "main.js": "/portifolio/static/js/main.c27ad24e.js",
     "static/media/jt-6a-1JcjtVbc-unsplash.jpg": "/portifolio/static/media/jt-6a-1JcjtVbc-unsplash.af0badd25b705f711b96.jpg",
     "static/media/clement-m-igX2deuD9lc-unsplash.jpg": "/portifolio/static/media/clement-m-igX2deuD9lc-unsplash.e6bc4ad148a132b1325c.jpg",
+    "static/media/projeto1.png": "/portifolio/static/media/projeto1.3533fc4c3629ea3d3302.png",
     "static/media/Moon.png": "/portifolio/static/media/Moon.dedd9ac7d17749adf0ab.png",
     "static/media/Phototer.jpg": "/portifolio/static/media/Phototer.e27f774fc8b8f137c1ad.jpg",
     "static/media/Sun.png": "/portifolio/static/media/Sun.e7682cec3648fc9c0659.png",
     "static/media/GothamLight.ttf": "/portifolio/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
     "static/media/GothamMedium.ttf": "/portifolio/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
     "index.html": "/portifolio/index.html",
-    "main.d9333acf.css.map": "/portifolio/static/css/main.d9333acf.css.map",
-    "main.e7bb20aa.js.map": "/portifolio/static/js/main.e7bb20aa.js.map"
+    "main.43b1647b.css.map": "/portifolio/static/css/main.43b1647b.css.map",
+    "main.c27ad24e.js.map": "/portifolio/static/js/main.c27ad24e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9333acf.css",
-    "static/js/main.e7bb20aa.js"
+    "static/css/main.43b1647b.css",
+    "static/js/main.c27ad24e.js"
   ]
 }
