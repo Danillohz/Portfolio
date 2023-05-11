@@ -16,6 +16,7 @@ import SassImg from "../imagens/icons/skillsimg/icons8-sass-50.png"
 
 class Skills extends Component {
 
+  //componente que faz as animações funcionarem
   componentDidMount() {
     AOS.init();
   }
@@ -35,7 +36,7 @@ class Skills extends Component {
               <div  
                 className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
 
@@ -45,7 +46,7 @@ class Skills extends Component {
               <div
                 className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={CssImg} alt=""></img> </div>
@@ -54,7 +55,7 @@ class Skills extends Component {
               <div
               className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={JsImg} alt=""></img> </div>
@@ -63,7 +64,7 @@ class Skills extends Component {
               <div
               className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={ReactImg} alt=""></img> </div>
@@ -72,7 +73,7 @@ class Skills extends Component {
               <div
               className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={GitImg} alt=""></img> </div>
@@ -81,7 +82,7 @@ class Skills extends Component {
               <div
               className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={GitHImg} alt=""></img> </div>
@@ -90,7 +91,7 @@ class Skills extends Component {
               <div
               className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={MysqlImg} alt=""></img> </div>
@@ -99,7 +100,7 @@ class Skills extends Component {
               <div
               className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={BootsImg} alt=""></img> </div>
@@ -108,7 +109,7 @@ class Skills extends Component {
               <div
               className="mb-1 col"
                 data-aos="fade-left"
-                data-aos-offset="60"
+                data-aos-offset="70"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600">
                 <div> <img src={SassImg} alt=""></img> </div>

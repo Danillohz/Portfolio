@@ -28,7 +28,7 @@ class Contact extends Component {
                             <div
                                 className="mb-1 col"
                                 data-aos="fade-right"
-                                data-aos-offset="60"
+                                data-aos-offset="70"
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="600">
                                 <div><a href="https://github.com/Danillohz" target="_blank" rel="noreferrer"><img src={GitHIcon} alt=""></img></a></div>
@@ -36,7 +36,7 @@ class Contact extends Component {
                             <div
                                 className="mb-1 col"
                                 data-aos="fade-right"
-                                data-aos-offset="60"
+                                data-aos-offset="70"
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="600">
                                 <div><a href="https://www.linkedin.com/in/danillo-henrique-zezepanski-056056239/" target="_blank" rel="noreferrer"><img src={LinkeIcon} alt=""></img></a></div>
@@ -44,7 +44,7 @@ class Contact extends Component {
                             <div
                                 className="mb-1 col"
                                 data-aos="fade-right"
-                                data-aos-offset="60"
+                                data-aos-offset="70"
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="600">
                                 <div><a href="https://www.instagram.com/danillo_hz/" target="_blank" rel="noreferrer"><img src={InstaIcon} alt=""></img></a></div>
@@ -52,7 +52,7 @@ class Contact extends Component {
                             <div
                                 className="mb-1 col"
                                 data-aos="fade-right"
-                                data-aos-offset="60"
+                                data-aos-offset="70"
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="600">
                                 <div><a href="https://www.facebook.com/danny.jjunior.5" target="_blank" rel="noreferrer"><img src={FaceIcon} alt=""></img></a></div>
@@ -60,7 +60,7 @@ class Contact extends Component {
                             <div
                                 className="mb-1 col"
                                 data-aos="fade-right"
-                                data-aos-offset="60"
+                                data-aos-offset="70"
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="600">
                                 <div><a href="mailto:danillohzd.real@gmail.com" rel="noreferrer" ><img src={EmaiIcon} alt=""></img></a></div>

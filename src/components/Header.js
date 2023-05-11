@@ -47,7 +47,7 @@ const Header = () => {
         <>
             <div className="container-fluid Website-Header">
 
-                <h1 className="mt-1  position-absolute top-0 start-50 translate-middle-x">Portifolio</h1>
+                <h1 className="mt-1  position-absolute top-0 start-50 translate-middle-x">Portfolio</h1>
                 <div className="position-absolute top-0 end-0 Dark-Or-Light-Button-Container">
                     <button className="Dark-Or-Light-Button" onClick={clickChangeTheme}>
 

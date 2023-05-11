@@ -44,10 +44,10 @@ const Menu = () => {
                         className="Menu-Opcoes">
                         
                             <ul className=" Menu-Buttons-Ul">
-                                <li><button>About me</button></li>
-                                <li><button>Projects</button></li>
-                                <li><button>Contact</button></li>
-                            </ul>
+                                <li><a href="#simple-list-item-1"><p>About me</p></a></li>
+                                <li><a href="#simple-list-item-2"><p>Projects</p></a></li>
+                                <li><a href="#simple-list-item-3"><p>Contact</p></a></li>
+                            </ul> 
                         
                     </div>
                 )}
