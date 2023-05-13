@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.1498c585.css",
-    "main.js": "/portifolio/static/js/main.b235a0a5.js",
-    "static/media/jt-6a-1JcjtVbc-unsplash.jpg": "/portifolio/static/media/jt-6a-1JcjtVbc-unsplash.af0badd25b705f711b96.jpg",
-    "static/media/clement-m-igX2deuD9lc-unsplash.jpg": "/portifolio/static/media/clement-m-igX2deuD9lc-unsplash.e6bc4ad148a132b1325c.jpg",
-    "static/media/projeto1.png": "/portifolio/static/media/projeto1.3533fc4c3629ea3d3302.png",
-    "static/media/Moon.png": "/portifolio/static/media/Moon.dedd9ac7d17749adf0ab.png",
-    "static/media/Phototer.jpg": "/portifolio/static/media/Phototer.e27f774fc8b8f137c1ad.jpg",
-    "static/media/Sun.png": "/portifolio/static/media/Sun.e7682cec3648fc9c0659.png",
-    "static/media/GothamLight.ttf": "/portifolio/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
-    "static/media/GothamMedium.ttf": "/portifolio/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
-    "static/media/Projeto2.png": "/portifolio/static/media/Projeto2.70ad0d33bd6baad4b803.png",
-    "index.html": "/portifolio/index.html",
-    "main.1498c585.css.map": "/portifolio/static/css/main.1498c585.css.map",
-    "main.b235a0a5.js.map": "/portifolio/static/js/main.b235a0a5.js.map"
+    "main.css": "/Portfolio/static/css/main.bfc0e8f4.css",
+    "main.js": "/Portfolio/static/js/main.04a4b42b.js",
+    "static/media/jt-6a-1JcjtVbc-unsplash.jpg": "/Portfolio/static/media/jt-6a-1JcjtVbc-unsplash.af0badd25b705f711b96.jpg",
+    "static/media/clement-m-igX2deuD9lc-unsplash.jpg": "/Portfolio/static/media/clement-m-igX2deuD9lc-unsplash.e6bc4ad148a132b1325c.jpg",
+    "static/media/projeto1.png": "/Portfolio/static/media/projeto1.3533fc4c3629ea3d3302.png",
+    "static/media/Moon.png": "/Portfolio/static/media/Moon.dedd9ac7d17749adf0ab.png",
+    "static/media/Phototer.jpg": "/Portfolio/static/media/Phototer.e27f774fc8b8f137c1ad.jpg",
+    "static/media/Sun.png": "/Portfolio/static/media/Sun.e7682cec3648fc9c0659.png",
+    "static/media/GothamLight.ttf": "/Portfolio/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
+    "static/media/GothamMedium.ttf": "/Portfolio/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
+    "static/media/Projeto2.png": "/Portfolio/static/media/Projeto2.70ad0d33bd6baad4b803.png",
+    "index.html": "/Portfolio/index.html",
+    "main.bfc0e8f4.css.map": "/Portfolio/static/css/main.bfc0e8f4.css.map",
+    "main.04a4b42b.js.map": "/Portfolio/static/js/main.04a4b42b.js.map"
   },
   "entrypoints": [
-    "static/css/main.1498c585.css",
-    "static/js/main.b235a0a5.js"
+    "static/css/main.bfc0e8f4.css",
+    "static/js/main.04a4b42b.js"
   ]
 }
