@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a232bdd2.css",
-    "main.js": "/Portfolio/static/js/main.3acc422d.js",
+    "main.css": "/Portfolio/static/css/main.38d997af.css",
+    "main.js": "/Portfolio/static/js/main.e0473293.js",
     "static/media/jt-6a-1JcjtVbc-unsplash.jpg": "/Portfolio/static/media/jt-6a-1JcjtVbc-unsplash.af0badd25b705f711b96.jpg",
     "static/media/clement-m-igX2deuD9lc-unsplash.jpg": "/Portfolio/static/media/clement-m-igX2deuD9lc-unsplash.e6bc4ad148a132b1325c.jpg",
     "static/media/projeto1.png": "/Portfolio/static/media/projeto1.3533fc4c3629ea3d3302.png",
     "static/media/Moon.png": "/Portfolio/static/media/Moon.dedd9ac7d17749adf0ab.png",
+    "static/media/Cv Danillo Henrique Zezepanski.pdf": "/Portfolio/static/media/Cv Danillo Henrique Zezepanski.8bdf59d7bb064df815da.pdf",
     "static/media/Phototer.jpg": "/Portfolio/static/media/Phototer.e27f774fc8b8f137c1ad.jpg",
     "static/media/Sun.png": "/Portfolio/static/media/Sun.e7682cec3648fc9c0659.png",
     "static/media/GothamLight.ttf": "/Portfolio/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
     "static/media/GothamMedium.ttf": "/Portfolio/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
     "static/media/Projeto2.png": "/Portfolio/static/media/Projeto2.70ad0d33bd6baad4b803.png",
     "index.html": "/Portfolio/index.html",
-    "main.a232bdd2.css.map": "/Portfolio/static/css/main.a232bdd2.css.map",
-    "main.3acc422d.js.map": "/Portfolio/static/js/main.3acc422d.js.map"
+    "main.38d997af.css.map": "/Portfolio/static/css/main.38d997af.css.map",
+    "main.e0473293.js.map": "/Portfolio/static/js/main.e0473293.js.map"
   },
   "entrypoints": [
-    "static/css/main.a232bdd2.css",
-    "static/js/main.3acc422d.js"
+    "static/css/main.38d997af.css",
+    "static/js/main.e0473293.js"
   ]
 }
