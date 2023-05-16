@@ -346,6 +346,11 @@ body {
                 .Skills-Container {
                     @include skillAndContainer();
                     border-left: 2px solid #191e24;
+
+                    button{
+                        background-color: transparent;
+                        border: 0px;
+                    }
                 }
 
                 .Contact-Container {

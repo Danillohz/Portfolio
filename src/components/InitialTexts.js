@@ -3,8 +3,6 @@ import { useState } from "react"
 
 const InitialTexts = (props) =>{
 
-    const changeTheme = props.changeTheme
-
     //Texto que serão escritos 
     const [welcomeTxt, setWelcomeTxt] = useState("");
     const Text1 = "Seja Bem vindo!";
