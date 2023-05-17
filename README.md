@@ -6,9 +6,16 @@ Este projeto é uma aplicação web, feita com intuito de comentar sobre minhas 
 
 ## Layout web
 
-![Web 1](https://github.com/Danillohz/Assets/blob/main/Imagens/Portf%C3%B3lio-Img-PCWEB1.PNG)
+![Web 1](https://github.com/Danillohz/Assets/blob/main/Imagens/Portif%C3%B3lio/Portf%C3%B3lio-Img-PCWEB1.PNG)
 
-![Web 2](https://github.com/Danillohz/Assets/blob/main/Imagens/Portf%C3%B3lio-Img-PCWEB2.PNG)
+![Web 2](https://github.com/Danillohz/Assets/blob/main/Imagens/Portif%C3%B3lio/Portf%C3%B3lio-Img-PCWEB2.PNG)
+
+![Web 3](https://github.com/Danillohz/Assets/blob/main/Imagens/Portif%C3%B3lio/Portf%C3%B3lio-Img-MobileWEB3.jpeg)
+
+![Web 4](https://github.com/Danillohz/Assets/blob/main/Imagens/Portif%C3%B3lio/Portf%C3%B3lio-Img-MobileWEB1.jpeg)
+
+![Web 5](https://github.com/Danillohz/Assets/blob/main/Imagens/Portif%C3%B3lio/Portf%C3%B3lio-Img-MobileWEB2.jpeg)
+
 
 # Tecnologias utilizadas
 ## Front end
