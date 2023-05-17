@@ -6,9 +6,9 @@ Este projeto é uma aplicação web, feita com intuito de comentar sobre minhas 
 
 ## Layout web
 
-![Web 1]()
+![Web 1](https://github.com/Danillohz/Assets/blob/main/Imagens/Portf%C3%B3lio-Img-PCWEB1.PNG)
 
-![Web 2]()
+![Web 2](https://github.com/Danillohz/Assets/blob/main/Imagens/Portf%C3%B3lio-Img-PCWEB2.PNG)
 
 # Tecnologias utilizadas
 ## Front end
