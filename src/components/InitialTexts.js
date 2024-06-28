@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react"
 
-import cvDanillo from "../components/Currículo Danillo Henrique Zezepanski Full Stack.pdf"
+import cvDanillo from "../components/CurriculoDanilloHenriqueZezepanski.pdf"
 
 
 const InitialTexts = () => {
