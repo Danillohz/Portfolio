@@ -21,10 +21,13 @@ import SassImg from "../imagens/icons/skillsimg/icons8-sass-50.png"
 
 
 
-const Skills = () => {
+const Skills = (props) => {
 
   const [popoverHeader, setPopoverHeader] = useState("")
   const [popoverBody, setPopoverBody] = useState("")
+
+  //Recebe o parametro do tema do BodyAll (Claro ou Escuro/ True or False)
+  const changeTheme = props.changeTheme;
 
   const changeNumberPopover = (number) => {
 
@@ -95,163 +98,165 @@ const Skills = () => {
   return (
     <>
 
-      <div className="Skills-Container">
-        <h1>Skills</h1>
-        <div className="Skills-Imagens">
-          <div className="row">
+      <div className={changeTheme ? "Container-Texts-LightTheme" : "Container-Texts-DarkTheme"}>
+        <div className="Skills-Container">
+          <h1>Habilidades</h1>
+          <div className="Skills-Imagens">
+            <div className="row">
 
-            {/*Animações de scroll dos icons */}
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
+              {/*Animações de scroll dos icons */}
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
 
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(1)}>
-                    <img src={htmlImg} alt="">
-                    </img>
-                  </button>
-                </OverlayTrigger>
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(1)}>
+                      <img src={htmlImg} alt="">
+                      </img>
+                    </button>
+                  </OverlayTrigger>
+                </div>
+
               </div>
 
-            </div>
-
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(2)}>
-                    <img src={CssImg} alt="">
-                    </img>
-                  </button>
-                </OverlayTrigger> </div>
-            </div>
-
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(3)}>
-                    <img src={JsImg} alt="">
-                    </img>
-                  </button>
-                </OverlayTrigger>
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(2)}>
+                      <img src={CssImg} alt="">
+                      </img>
+                    </button>
+                  </OverlayTrigger> </div>
               </div>
-            </div>
 
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(4)}>
-                    <img src={ReactImg} alt="">
-                    </img></button>
-                </OverlayTrigger>
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(3)}>
+                      <img src={JsImg} alt="">
+                      </img>
+                    </button>
+                  </OverlayTrigger>
+                </div>
               </div>
-            </div>
 
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(5)}>
-                    <img src={GitImg} alt="">
-                    </img>
-                  </button>
-                </OverlayTrigger>
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(4)}>
+                      <img src={ReactImg} alt="">
+                      </img></button>
+                  </OverlayTrigger>
+                </div>
               </div>
-            </div>
 
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(6)}>
-                    <img src={GitHImg} alt="">
-                    </img>
-                  </button>
-                </OverlayTrigger>
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(5)}>
+                      <img src={GitImg} alt="">
+                      </img>
+                    </button>
+                  </OverlayTrigger>
+                </div>
               </div>
-            </div>
 
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(7)}>
-                    <img src={MysqlImg} alt="">
-                    </img>
-                  </button>
-                </OverlayTrigger>
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(6)}>
+                      <img src={GitHImg} alt="">
+                      </img>
+                    </button>
+                  </OverlayTrigger>
+                </div>
               </div>
-            </div>
 
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(8)}>
-                    <img src={BootsImg} alt="">
-                    </img>
-                  </button>
-                </OverlayTrigger>
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(7)}>
+                      <img src={MysqlImg} alt="">
+                      </img>
+                    </button>
+                  </OverlayTrigger>
+                </div>
               </div>
-            </div>
 
-            <div
-              className="mb-1 col"
-              data-aos="fade-left"
-              data-aos-offset="70"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600">
-              <div>
-                <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
-                  <button onMouseEnter={() => changeNumberPopover(9)}>
-                    <img src={SassImg} alt="">
-
-                    </img>
-                  </button>
-                </OverlayTrigger>
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(8)}>
+                      <img src={BootsImg} alt="">
+                      </img>
+                    </button>
+                  </OverlayTrigger>
+                </div>
               </div>
+
+              <div
+                className="mb-1 col"
+                data-aos="fade-left"
+                data-aos-offset="70"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
+                <div>
+                  <OverlayTrigger trigger="hover" placement="auto" overlay={popovers}>
+                    <button onMouseEnter={() => changeNumberPopover(9)}>
+                      <img src={SassImg} alt="">
+
+                      </img>
+                    </button>
+                  </OverlayTrigger>
+                </div>
+              </div>
+
+
+
+
             </div>
-
-
-
-
-          </div>
+          </div >
         </div >
-      </div >
+      </div>
 
     </>
   )

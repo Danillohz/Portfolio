@@ -44,9 +44,9 @@ const Menu = () => {
                         className="Menu-Opcoes">
                         
                             <ul className=" Menu-Buttons-Ul">
-                                <li><a href="#simple-list-item-1"><p>About me</p></a></li>
-                                <li><a href="#simple-list-item-2"><p>Projects</p></a></li>
-                                <li><a href="#simple-list-item-3"><p>Contact</p></a></li>
+                                <li><a href="#simple-list-item-2"><p>Sobre mim</p></a></li>
+                                <li><a href="#simple-list-item-3"><p>Projetos</p></a></li>
+                                <li><a href="#simple-list-item-4"><p>Contatos e Habilidades</p></a></li>
                             </ul> 
                         
                     </div>

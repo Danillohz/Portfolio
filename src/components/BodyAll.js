@@ -9,6 +9,7 @@ import { SecondsContext } from "./Time";
 
 import Myimg from "../imagens/Phototer.jpg"
 import InitialTexts from "./InitialTexts";
+import AboutMe from "./AboutMe";
 
 
 
@@ -62,7 +63,6 @@ const BodyAll = (props) => {
 
                     <div className="Container-My-Img">
 
-
                         <Transition in={showAnimPhoto === true} timeout={0} nodeRef={nodeRef} >
                             {(state) => (
                                 <div ref={nodeRef}
@@ -74,29 +74,38 @@ const BodyAll = (props) => {
                         </Transition>
 
 
-                        <div className={changeTheme ? "Container-Texts-LightTheme" :"Container-Texts-DarkTheme"}>
-                            <InitialTexts changeTheme={changeTheme}></InitialTexts>
+                        <div className={changeTheme ? "Container-Texts-LightTheme" : "Container-Texts-DarkTheme"}>
+                            <InitialTexts></InitialTexts>
                         </div>
+
+
                     </div>
 
                 </div>
 
-                <div id="simple-list-item-2" className="Container-Projects ">
+                <div id="simple-list-item-2" className="About-Me">
+                    <AboutMe changeTheme={changeTheme}></AboutMe>
+                </div>
 
-                    <Projects></Projects>
+                <div id="simple-list-item-3" className="Container-Projects ">
+
+
+                    <Projects changeTheme={changeTheme}></Projects>
+
 
                 </div>
-                <div id="simple-list-item-3" className="SkillsAndContact-Container row mt-3">
+                <div id="simple-list-item-4" className="SkillsAndContact-Container row mt-3">
                     <div className="col">
-                        <Contact></Contact>
+                        <Contact changeTheme={changeTheme}></Contact>
                     </div>
-                    <div className="col">
-                        <Skills></Skills>
+                    <div className="col" id="skills-barrier">
+                        <Skills changeTheme={changeTheme}></Skills>
                     </div>
 
                 </div>
-
             </div>
+
+
             <footer>
 
             </footer>

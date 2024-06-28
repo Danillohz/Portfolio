@@ -18,54 +18,58 @@ class Contact extends Component {
 
 
     render() {
+
+        const { changeTheme } = this.props
         return (
             <>
-                {/*Animações dos icones de contato*/}
-                <div className="Contact-Container">
-                    <h2>Contact</h2>
-                    <div className="Contacts-Links">
-                        <div className="row">
-                            <div
-                                className="mb-1 col"
-                                data-aos="fade-right"
-                                data-aos-offset="70"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="600">
-                                <div><a href="https://github.com/Danillohz" target="_blank" rel="noreferrer"><img src={GitHIcon} alt=""></img></a></div>
-                            </div>
-                            <div
-                                className="mb-1 col"
-                                data-aos="fade-right"
-                                data-aos-offset="70"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="600">
-                                <div><a href="https://www.linkedin.com/in/danillo-henrique-zezepanski-056056239/" target="_blank" rel="noreferrer"><img src={LinkeIcon} alt=""></img></a></div>
-                            </div>
-                            <div
-                                className="mb-1 col"
-                                data-aos="fade-right"
-                                data-aos-offset="70"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="600">
-                                <div><a href="https://www.instagram.com/danillo_hz/" target="_blank" rel="noreferrer"><img src={InstaIcon} alt=""></img></a></div>
-                            </div>
-                            <div
-                                className="mb-1 col"
-                                data-aos="fade-right"
-                                data-aos-offset="70"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="600">
-                                <div><a href="https://www.facebook.com/danny.jjunior.5" target="_blank" rel="noreferrer"><img src={FaceIcon} alt=""></img></a></div>
-                            </div>
-                            <div
-                                className="mb-1 col"
-                                data-aos="fade-right"
-                                data-aos-offset="70"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="600">
-                                <div><a href="mailto:danillohzd.real@gmail.com" rel="noreferrer" ><img src={EmaiIcon} alt=""></img></a></div>
-                            </div>
+                <div className={changeTheme ? "Container-Texts-LightTheme" : "Container-Texts-DarkTheme"}>
+                    {/*Animações dos icones de contato*/}
+                    <div className="Contact-Container">
+                        <h1>Contatos</h1>
+                        <div className="Contacts-Links">
+                            <div className="row">
+                                <div
+                                    className="mb-1 col"
+                                    data-aos="fade-right"
+                                    data-aos-offset="70"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="600">
+                                    <div><a href="https://github.com/Danillohz" target="_blank" rel="noreferrer"><img src={GitHIcon} alt=""></img></a></div>
+                                </div>
+                                <div
+                                    className="mb-1 col"
+                                    data-aos="fade-right"
+                                    data-aos-offset="70"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="600">
+                                    <div><a href="https://www.linkedin.com/in/danillo-henrique-zezepanski-056056239/" target="_blank" rel="noreferrer"><img src={LinkeIcon} alt=""></img></a></div>
+                                </div>
+                                <div
+                                    className="mb-1 col"
+                                    data-aos="fade-right"
+                                    data-aos-offset="70"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="600">
+                                    <div><a href="https://www.instagram.com/danillo_hz/" target="_blank" rel="noreferrer"><img src={InstaIcon} alt=""></img></a></div>
+                                </div>
+                                <div
+                                    className="mb-1 col"
+                                    data-aos="fade-right"
+                                    data-aos-offset="70"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="600">
+                                    <div><a href="https://www.facebook.com/danny.jjunior.5" target="_blank" rel="noreferrer"><img src={FaceIcon} alt=""></img></a></div>
+                                </div>
+                                <div
+                                    className="mb-1 col"
+                                    data-aos="fade-right"
+                                    data-aos-offset="70"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="600">
+                                    <div><a href="mailto:danillohzd.real@gmail.com" rel="noreferrer" ><img src={EmaiIcon} alt=""></img></a></div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -41,7 +41,7 @@ body {
             position: absolute;
             background-color: $Head-and-footer-color;
             height: 40px;
-            color: white;
+            color: #dadada;
             box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.348);
 
             z-index: 2;
@@ -88,7 +88,7 @@ body {
             z-index: 2;
 
             .Menu-Button {
-                color: white;
+                color: #dadada;
                 background-color: transparent;
                 border: 0px;
                 margin: 5px 0px 0px 4px;
@@ -130,7 +130,7 @@ body {
                             background: transparent;
                             width: 100%;
                             height: 100%;
-                            color: white;
+                            color: #dadada;
                             border: 0px;
                             text-decoration: none;
                             font-family: $Normal-font;
@@ -211,44 +211,97 @@ body {
             }
 
             @mixin texts(){
-                p {
-                    margin: 0;
-                }
 
+                .initial-texts-container{
+                    text-align: center;
+                    font-size: 14px;
 
-                .Welcome-Text {
-                    font-size: 3.5vh;
-                }
+                    p {
+                        margin: 0;
+                        @include fontlighter();
+                        
+                    }
+    
+    
+                    .Welcome-Text {
+                        font-size: 1.8em;
+                    }
+    
+                    .Name-Text {
+                        font-size: 1em;
+                    }
+    
+                    .Developer-Text {
+                        font-size: 1em;
+                        color: #8C2656;
+                    }
+    
+                    button{
+                        background-color: #8c265641;
+                        border: 1px solid $darkred-color;
+                        border-radius: 5px;
+                        padding: 8px;
+                        font-size: 1.1em;
 
-                .Name-Text {
-                    font-size: 2.4vh;
-                }
-
-                .Developer-Text {
-                    font-size: 1.8vh;
-                    color: #8C2656;
+                        
+                    }
+                    button:hover{
+                        background-color: #8c265676;
+                    }
                 }
             }
 
             .Container-Texts-LightTheme {
 
                 color: black;
-                text-align: center;
-                @include texts()
                 
+                @include texts();
+
+                button{
+                    color: black;
+                }
+
             }
 
             .Container-Texts-DarkTheme {
-                color: white;
-                text-align: center;
-                @include texts()
+                color: #dadada;
+                @include texts();
+
+                button{
+                    color: #dadada;
+                }
                     
+            }
+
+            .About-Me{
+                position: relative;
+                width: 80%;
+                margin: 20px auto 50px auto;
+                text-align: center;
+                border: 2px solid #8C2656;
+                padding: 15px;
+                border-radius: 10px;
+
+                font-size: 14px;
+
+                @include fontlighter();
+
+                h1{
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+                p{
+                    
+                    text-align: left;
+                    font-size: 1em;
+                    font-weight: 600;
+                }
             }
 
             .Container-Projects {
                 width: 80%;
                 height: 100%;
-                margin: 50px auto 50px auto;
+                margin: 20px auto 50px auto;
                 border: 2px solid #191e24;
                 box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.282);
                 color: #12161a;
@@ -279,7 +332,7 @@ body {
                     .Project1 {
                         @include ProjectsImg();
                         background-image: url("imagens/projeto1.png");
-                        color: white;
+                        color: #dadada;
                     }
 
                     .Project2 {
@@ -320,10 +373,15 @@ body {
                 margin: 0px auto 30px auto;
                 overflow-x: hidden;
 
+                #skills-barrier{
+                    
+                    border-left: 2px solid #191e24;
+                    
+                }
 
                 h1 {
-                    color: #12161a;
-                    font-size: 24px;
+                
+                    font-size: 1.2em;
                     font-family: $Normal-font;
                 }
 
@@ -338,14 +396,12 @@ body {
                     text-align: center;
                     width: 100%;
                     height: 100%;
-                    border-radius: 5px 5px;
 
 
                 }
 
                 .Skills-Container {
                     @include skillAndContainer();
-                    border-left: 2px solid #191e24;
 
                     button{
                         background-color: transparent;
@@ -354,8 +410,9 @@ body {
                 }
 
                 .Contact-Container {
+                
                     @include skillAndContainer();
-                    border-right: 2px solid #191e24;
+                
                 }
             }
 
